@@ -1,0 +1,56 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "comments": {
+    "devDependencies": {
+      "npm": "Instalamos las dependencias usando de momento npm@6 con `npm i`, y seguidamente hacemos el bootstrap usando npm@7.0.0-beta.7 (posteriores no hacen el bootstrap) con `npx npm@7.0.0-beta.7 i`. Más adelante lo haremos todo a la vez usando sólo npm7 con `npm i`, cuando npm7 pueda instalar paquetes de Github y cuando venga por defecto en Node.js."
+    }
+  },
+  "dependencies": {
+    "@vlilloh/web-component": "^0.1.0",
+    "@vlilloh/web-components": "^0.1.0"
+  },
+  "description": "Web Start",
+  "devDependencies": {
+    "@vlilloh/sass": "^0.1.0",
+    "@changesets/cli": "^2.10.2",
+    "@open-wc/building-rollup": "^1.9.0",
+    "@open-wc/rollup-plugin-html": "^1.2.3",
+    "@rollup/plugin-typescript": "^6.0.0",
+    "deepmerge": "^4.2.2",
+    "es-dev-server": "^1.57.4",
+    "firebase-tools": "^8.10.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.26.11",
+    "rollup-plugin-copy": "^3.3.0",
+    "typescript": "^4.0.2"
+  },
+  "keywords": [
+    "Start",
+    "Starter",
+    "Web"
+  ],
+  "license": "ISC",
+  "name": "root",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlilloh/web-start"
+  },
+  "scripts": {
+    "compile:scss": "node_modules/@vlilloh/sass/compile.sh",
+    "compile:ts": "tsc -b packages/*",
+    "compile": "npm run compile:scss && npm run compile:ts",
+    "clean:ts": "tsc -b packages/* --clean",
+    "clean:scss": "rimraf packages/*/src/styles*.ts",
+    "clean": "npm run clean:ts && npm run clean:scss",
+    "serve": "es-dev-server --app-index index.html --compatibility none --node-resolve",
+    "build": "rimraf dist && rollup -c",
+    "serve:dist": "firebase serve",
+    "deploy": "firebase deploy",
+    "login": "npm login -reg https://npm.pkg.github.com"
+  },
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}

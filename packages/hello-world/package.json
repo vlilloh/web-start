@@ -1,0 +1,16 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "description": "Hello World",
+  "keywords": ["Hello World"],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "@vlilloh/hello-world",
+  "repository": {
+    "directory": "packages/hello-world",
+    "type": "git",
+    "url": "https://github.com/vlilloh/web-start"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "outDir": ".",
+    "rootDir": "src",
+    "tsBuildInfoFile": ".tsbuildinfo"
+  },
+  "include": [
+    "src/*.ts"
+  ],
+  "exclude": [],
+  "references": [
+    {"path": "../view-404"},
+    {"path": "../view-home"}
+  ]
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Start</title>
+    <meta name="description" content="Web Start">
+    <meta name="generator" content="Web Components">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block">
+    <style>
+      body {
+        margin: 0;
+        line-height: 1.5;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .unresolved {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body class="unresolved">
+    <view-app app-title="Web Start"></view-app>
+    <noscript>Please enable JavaScript to view this website.</noscript>
+    <script type="module" src="packages/view-app/index.js"></script>
+    <script>addEventListener('load', () => document.body.classList.remove('unresolved'));</script>
+  </body>
+</html>

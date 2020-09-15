@@ -1,0 +1,68 @@
+{
+  "/": {
+    "node_modules/@vlilloh/web-app/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "packages/view-app/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@vlilloh/web-view/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "packages/view-home/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/view-home": {
+    "node_modules/@vlilloh/web-app/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "packages/view-app/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@vlilloh/web-view/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "packages/view-home/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    }
+  },
+  "/view-404": {
+    "node_modules/@vlilloh/web-app/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "packages/view-app/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "node_modules/@vlilloh/web-view/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    },
+    "packages/view-404/index.js": {
+      "crossorigin": "anonymous",
+      "type": "script",
+      "weight": 1
+    }
+  }
+}

@@ -1,0 +1,14 @@
+:host {
+  --mdc-theme-primary: #1967d2;
+}
+
+web-top-app-bar {
+  --web-top-app-bar-tab-bar-display: none;
+}
+
+@media(min-width: 600px) {
+  web-top-app-bar {
+    /* --web-top-app-bar-navigation-icon-display: none; */
+    --web-top-app-bar-tab-bar-display: flex;
+  }
+}
